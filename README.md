@@ -1,6 +1,6 @@
-#health-monitor
+# health-monitor
 
-### Build spring boot application
+### Build the spring boot application
 ```shell
 ./mvnw package
 ```
@@ -19,3 +19,7 @@ docker run -d -p 8080:8080 \
     healthcheck-monitor:latest
 ```
 
+### Push the image into minikube node.
+```shell
+minikube image load healthcheck-monitor:latest
+```
